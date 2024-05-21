@@ -1,0 +1,46 @@
+{
+  "id": "24f8e2c1-8d6f-4e3f-8d7f-8e4b7f6a7e9c",
+  "version": "2.0",
+  "name": "Send Message Test",
+  "url": "http://localhost/gab/chat",
+  "tests": [{
+    "id": "3e8c7f2d-8b4f-4a8d-90e6-3e7c8f5a7d6f",
+    "name": "Test Send Message",
+    "commands": [{
+        "id": "8f9b1c6e-4e2f-4b8d-a6e4-8f7b6d3c9d2e",
+        "comment": "",
+        "command": "open",
+        "target": "/gab/chat",
+        "value": ""
+      },
+      {
+        "id": "7c8d9b6f-4e1f-4d2b-9f6e-8c4b6a3e7d5c",
+        "comment": "",
+        "command": "click",
+        "target": "css=div.contact-list div.contact[data-id='2']",
+        "value": ""
+      },
+      {
+        "id": "4f5a7c2e-8d3f-4a8e-90c6-1f4b7a9c5e6e",
+        "comment": "",
+        "command": "type",
+        "target": "name=message",
+        "value": "Hello, this is a test message"
+      },
+      {
+        "id": "1c4e8d6f-8a7d-4e2b-9f6e-4b8a7c6d9e3f",
+        "comment": "",
+        "command": "click",
+        "target": "id=sendMessageButton",
+        "value": ""
+      },
+      {
+        "id": "9e7c2d4f-8b1f-4a8e-90d6-8f6b7c5a4e3f",
+        "comment": "",
+        "command": "assertText",
+        "target": "css=div.message:last-child",
+        "value": "Hello, this is a test message"
+      }
+    ]
+  }]
+}

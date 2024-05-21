@@ -1,0 +1,53 @@
+{
+  "id": "14d2f8e4-6939-4eeb-a177-1874ff81994e",
+  "version": "2.0",
+  "name": "Register Test",
+  "url": "http://localhost/gab/register",
+  "tests": [{
+    "id": "4d3c5f3e-4d0b-4e3c-87fb-274c5695470c",
+    "name": "Test Register",
+    "commands": [{
+        "id": "5e3c1f7c-7e4e-4a2f-88db-21359f9c5e78",
+        "comment": "",
+        "command": "open",
+        "target": "/gab/register",
+        "value": ""
+      },
+      {
+        "id": "3e8f8d6e-8c0f-4c5b-b26a-8d83f5b67c5f",
+        "comment": "",
+        "command": "type",
+        "target": "name=email",
+        "value": "newuser@example.com"
+      },
+      {
+        "id": "6a3e7c7b-4d2e-4f2e-a2e3-1f4b8a9c8f4d",
+        "comment": "",
+        "command": "type",
+        "target": "name=password",
+        "value": "newpassword123"
+      },
+      {
+        "id": "0f4a7e9b-4b8e-41c3-a1a3-8c6d9b7b8f4a",
+        "comment": "",
+        "command": "type",
+        "target": "name=confirm_password",
+        "value": "newpassword123"
+      },
+      {
+        "id": "3d5b9c2e-8b4c-4d2e-b1f6-1f5b8c9a5d7f",
+        "comment": "",
+        "command": "click",
+        "target": "id=registerButton",
+        "value": ""
+      },
+      {
+        "id": "8c9d2f7b-4e2f-4b8e-90e6-2f6b9d1e2c6e",
+        "comment": "",
+        "command": "assertText",
+        "target": "css=div.confirmation",
+        "value": "Registro bem-sucedido! Faça login para continuar."
+      }
+    ]
+  }]
+}

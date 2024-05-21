@@ -1,0 +1,46 @@
+{
+  "id": "b1f8e1e3-883c-4e3e-8b16-f0c1b644173e",
+  "version": "2.0",
+  "name": "Login Test",
+  "url": "http://localhost/gab/login",
+  "tests": [{
+    "id": "1dbe50d1-66e7-4147-84ad-faf63f7bc438",
+    "name": "Test Login",
+    "commands": [{
+        "id": "e5b5d4a4-90b5-4417-90fa-7196a0a3f71d",
+        "comment": "",
+        "command": "open",
+        "target": "/gab/login",
+        "value": ""
+      },
+      {
+        "id": "e2b8f4e8-5480-44e3-85fc-2d6f0b9b1f71",
+        "comment": "",
+        "command": "type",
+        "target": "name=email",
+        "value": "user@example.com"
+      },
+      {
+        "id": "5d9f8c18-c1c3-4530-afe0-1d218ac69ed1",
+        "comment": "",
+        "command": "type",
+        "target": "name=password",
+        "value": "password123"
+      },
+      {
+        "id": "19b7fa83-8343-4c84-8a5c-77d0c2f9f717",
+        "comment": "",
+        "command": "click",
+        "target": "id=loginButton",
+        "value": ""
+      },
+      {
+        "id": "39c3af98-3a0f-4ae8-9023-e6fa9b9130c2",
+        "comment": "",
+        "command": "assertText",
+        "target": "css=div.dashboard",
+        "value": "Bem-vindo, User!"
+      }
+    ]
+  }]
+}
